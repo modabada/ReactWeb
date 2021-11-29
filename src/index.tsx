@@ -8,10 +8,15 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
     <React.StrictMode>
         <App />
-        <Title/>
     </React.StrictMode>,
     document.getElementById('root')
 );
+ReactDOM.render(
+    <React.StrictMode>
+        <Title/>
+    </React.StrictMode>,
+    document.getElementById('title')
+)
 
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
