@@ -1,7 +1,29 @@
+@font-face {
+    font-family: 'NanumGarMae';
+    src: url('./font/NanumGarMae.ttf') format('truetype');
+}
+
+
 .Title {
-    background-color: lightslategrey;
-    align-items: center;
-    display:flex;
+    position: relative;
+    background-color: #7a7a7a;
+    color: white;
+    display: flex;
     justify-content: center;
-    min-height: 100px;
+    align-content: center;
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-family: 'NanumGarMae', 'Franklin Gothic Medium';
+    min-block-size: 30vmin;
+
+}
+
+.MainTitle {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.SubTitle {
+    position: absolute;
+    bottom: 10%;
 }

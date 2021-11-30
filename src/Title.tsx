@@ -2,7 +2,7 @@ import React, {useState, useEffect, useRef} from 'react';
 import './Title.css';
 
 
-const word = "1인 청소년 웹개발 연습 홈페이지"
+const word = "1인 청소년 웹개발\n연습 홈페이지"
 
 function Title() {
     const timer = useRef(0);
@@ -26,7 +26,8 @@ function Title() {
 
     return (
         <div className="Title">
-            <h5>{word.slice(0, index)}</h5>
+            <h1 className="MainTitle">문 인 우</h1> 
+            <h5 className="SubTitle">{word.slice(0, index)}</h5>
         </div>
     )
 }
