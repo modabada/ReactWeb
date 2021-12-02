@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'NanumGarMae';
+    src: url('./font/NanumGarMae.ttf') format('truetype');
+}
+
+
+.MenuBar {
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    background-color: violet;
+    
+}
