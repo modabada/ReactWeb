@@ -51,8 +51,8 @@ function Title() {
 
     return (
         <div className="Title">
-            <h1 className="MainTitle">문 인 우</h1>
-            <h5 className="SubTitle">{word_output()} </h5>
+            <h1 className="MainTitle" draggable>문 인 우</h1>
+            <h5 className="SubTitle" draggable>{word_output()} </h5>
         </div>
     )
 }

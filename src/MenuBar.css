@@ -5,13 +5,28 @@
 
 
 .MenuBar {
-    height: 10vh;
-    width: 100vw;
+    margin-top: -10vh;
+    height: 10%;
+    width: 100%;
     position: fixed;
     display: flex;
     z-index: 1;
     background-color: violet;
-    align-content: center;
     justify-content: space-around;
-    
+}
+
+.Btn {
+    cursor: pointer;
+    color: white;  
+    background-color: black;
+    outline-color: darkgray;
+    outline-width: 1%;
+    outline-style: solid;
+    width: 25%; /* 100% / MenuBar.tsx.cnt */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }

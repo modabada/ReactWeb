@@ -4,3 +4,8 @@ body {
     margin-left: 0%;
     margin-right: 0%;
 }
+
+html {
+    background-color: cyan;
+    scroll-behavior: smooth;
+}
