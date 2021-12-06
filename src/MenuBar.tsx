@@ -19,11 +19,12 @@ function test1(e: number) {
 function Section(prop: any) {
     switch(prop.index) {
         case 0:
-            return(<div className="Btn" onClick={e => test1(prop.index)}>테0</div>);
+            const event = () => {};
+            return(<div className="Btn" draggable>테0</div>);
         case 1:
-            return(<div className="Btn" onClick={e => test1(prop.index)}>테1</div>);
+            return(<div className="Btn" draggable onClick={e => test1(prop.index)}>테1</div>);
         default:
-            return(<div className="Btn" onClick={e => test1(prop.index)}>난 버튼 {prop.index}</div>);
+            return(<div className="Btn" draggable onClick={e => test1(prop.index)}>난 버튼 {prop.index}</div>);
     }
 }
 

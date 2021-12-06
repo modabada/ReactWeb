@@ -13,15 +13,18 @@
     z-index: 1;
     background-color: violet;
     justify-content: space-around;
+    font-size: 1.5vw;
 }
 
-.Btn {
-    cursor: pointer;
+.Btn{
+    /*cursor: pointer;*/
     color: white;  
     background-color: black;
+    transition: background-color, 0.5s;
     outline-color: darkgray;
     outline-width: 1%;
     outline-style: solid;
+    pointer-events: 100vw;
     width: 25%; /* 100% / MenuBar.tsx.cnt */
     height: 100%;
     display: flex;
@@ -29,4 +32,9 @@
     align-items: center;
     margin-top: auto;
     margin-bottom: auto;
+}
+.Btn:hover{
+    background-color: #555555;
+    outline-color: yellowgreen;
+    z-index: 2;
 }
