@@ -48,11 +48,17 @@ function Title() {
             clearInterval(interv.current);
         }
     }, [index]);
+    const subTitle = <h5 className="SubTitle" draggable id="sex">{word_output()} </h5>
+    const test = () => {alert("이벤트 종료")}
+    const el = document.getElementsByClassName('MainTitle');
+    if(el.length > 0) {
+        el[0].addEventListener("transisionend", test, true);
+    }
 
     return (
         <div className="Title">
             <h1 className="MainTitle" draggable>문 인 우</h1>
-            <h5 className="SubTitle" draggable>{word_output()} </h5>
+            {subTitle}
         </div>
     )
 }

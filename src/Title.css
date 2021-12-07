@@ -22,10 +22,29 @@
 
 .MainTitle {
     position: absolute;
+    
     top: 10%;
+    animation: fadein 3s;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .SubTitle {
     position: absolute;
+    transition: transform, 5s;
     top: 50%;
 }
