@@ -23,7 +23,7 @@ function Title() {
         }
     }
     const word_output = () => {
-        let code = word[index].charCodeAt(0);
+        const code = word[index].charCodeAt(0);
         if(4352 <= code && code <= 4370) {
             return word.slice(0, index) + dict(word[index])
         }
@@ -37,8 +37,8 @@ function Title() {
     const [index, setIndex] = useState(0);
     useEffect(() => {
         interv.current = setInterval(() => {
-            if (timer.current++ > 4) {
-                setIndex(timer.current - 5);
+            if (timer.current++ > 25) {
+                setIndex(timer.current - 26);
             }
         }, 130);
         return () => clearInterval(interv.current);
@@ -48,17 +48,11 @@ function Title() {
             clearInterval(interv.current);
         }
     }, [index]);
-    const subTitle = <h5 className="SubTitle" draggable id="sex">{word_output()} </h5>
-    const test = () => {alert("이벤트 종료")}
-    const el = document.getElementsByClassName('MainTitle');
-    if(el.length > 0) {
-        el[0].addEventListener("transisionend", test, true);
-    }
 
     return (
         <div className="Title">
             <h1 className="MainTitle" draggable>문 인 우</h1>
-            {subTitle}
+            <h5 className="SubTitle" draggable>{word_output()} </h5>
         </div>
     )
 }

@@ -1,28 +1,29 @@
 import React, { Suspense } from 'react';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
-const Title = React.lazy( () => import('./Title'))
-const MenuBar = React.lazy( () => import("./MenuBar"))
+// const Title = React.lazy( () => import('./Title'))
+import Title from "./Title";
+import MenuBar from "./MenuBar";
+// const MenuBar = React.lazy( () => import("./MenuBar"))
 
 
 function App() {
     return (
-        <div className="React">
-            <Suspense fallback={<br></br>}>
-                <MenuBar/>
-            </Suspense>
-            <Suspense fallback={<h1> Loading... </h1>}>
-                <Title/>
-            </Suspense>
-            <p>
-                React start
-            </p>
-            <header className="App-header">
-                <p>
-                    Ediasdfasdft <code>src/App.tsx</code> and save to reload.
-                </p>
-                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-                <p>ㅎㅇ</p>
-            </header>
+        <div className="App">
+            <MenuBar/>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={
+                        <div className="Home">
+                            <Title />
+                        </div>
+                    } />
+                    <Route path="doc" element={
+                        <h1> 나도 모?루?</h1>
+                    } />
+
+                </Routes>
+            </BrowserRouter>
         </div>
     );
 }

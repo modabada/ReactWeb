@@ -1,6 +1,6 @@
 import './MenuBar.css';
 
-function MenuBar() {
+export default function MenuBar() {
     const Sections:Array<JSX.Element> = [];
     for(let i = 0; i < 4; i++) {
         Sections.push(<Section index={i}/>)
@@ -12,7 +12,6 @@ function MenuBar() {
     )
 }
 
-
 function test1(e: number) {
     alert("t" + e);
 }
@@ -21,7 +20,7 @@ function Section(prop: any) {
         case 0:
             return(
                 <div className="Btn" draggable onClick={e => {
-                    // run
+                    window.location.href="/doc";
                 }}>
                     테0
                 </div>);
@@ -54,5 +53,3 @@ function Section(prop: any) {
             return(<p></p>);
     }
 }
-
-export default MenuBar;
