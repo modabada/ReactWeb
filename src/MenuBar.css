@@ -5,36 +5,42 @@
 
 
 .MenuBar {
-    margin-top: -10vh;
-    height: 10%;
+    margin-top: -7vh;
+    height: 7vh;
     width: 100%;
+    background-color: black;
     position: fixed;
     display: flex;
     z-index: 1;
-    background-color: violet;
-    justify-content: space-around;
+    justify-content: flex-end;
     font-size: 1.5vw;
 }
 
 .Btn{
     cursor: pointer;
     color: white;  
-    background-color: black;
-    transition: background-color, 0.5s;
+    margin-left: 0.2%;
+    transition-property: background-color, block-size;
+    transition-duration: 0.5s, 0.3s;
     outline-color: darkgray;
     outline-width: 1%;
     outline-style: solid;
     pointer-events: 100vw;
-    width: 25%; /* 100% / MenuBar.tsx.cnt */
+    width: 23%; /* 100% / MenuBar.tsx.cnt */
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 .Btn:hover{
     background-color: #555555;
     outline-color: yellowgreen;
     z-index: 2;
+    block-size: 130%;
+}
+#Home {
+    width: 8%;
+}
+img {
+    height: 100%;
 }

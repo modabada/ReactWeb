@@ -5,7 +5,7 @@
 
 
 .Title {
-    margin-top: 10vh;
+    margin-top: 7vh;
     cursor: default;
     height: 30vh;
     width: 100%;
@@ -14,16 +14,17 @@
     justify-content: center;
     background-color: #50586C;
     color: white;
-    font-size: 24pt;
-    letter-spacing: 10pt;
+    font-size: 4vh;
+    letter-spacing: 2vh;
+    transition-property: font-size;
+    transition-duration: 0.3s;
     font-family: 'NanumGarMae';
 
 }
 
 .MainTitle {
     position: absolute;
-    
-    top: 10%;
+    top: 0%;
     animation: fadein 6s;
 }
 @keyframes fadein {
@@ -40,5 +41,5 @@
 
 .SubTitle {
     position: absolute;
-    top: 50%;
+    top: 45%;
 }
