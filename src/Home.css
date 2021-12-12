@@ -4,14 +4,21 @@
 }
 
 
-.Title {
-    margin-top: 7vh;
+.Home {
+    position: absolute;
     cursor: default;
-    height: 30vh;
+    margin-top: 7vh;
     width: 100%;
-    position: relative;
+
+}
+
+.Title {
+    margin-top: -7vh;
+    height: 30vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     background-color: #50586C;
     color: white;
     font-size: 4vh;
@@ -19,11 +26,10 @@
     transition-property: font-size;
     transition-duration: 0.3s;
     font-family: 'NanumGarMae';
-
 }
 
-.MainTitle {
-    position: absolute;
+#MainTitle {
+    margin-block: 0vh;
     top: 0%;
     animation: fadein 6s;
 }
@@ -39,7 +45,14 @@
     }
 }
 
-.SubTitle {
-    position: absolute;
-    top: 45%;
+#SubTitle {
+    margin-block: 0vh;
+    background-color: black;
+    top: 0%;
+}
+
+
+.Doc {
+    margin-top: 0vh;
+    background-color: cyan;
 }

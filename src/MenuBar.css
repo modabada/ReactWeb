@@ -5,11 +5,11 @@
 
 
 .MenuBar {
-    margin-top: -7vh;
+    position: fixed;
+    margin-top: 0vh;
     height: 7vh;
     width: 100%;
     background-color: black;
-    position: fixed;
     display: flex;
     z-index: 1;
     justify-content: flex-end;

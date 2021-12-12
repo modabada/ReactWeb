@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import './Title.css';
+import './Home.css';
 
 function Title() {
     const word = " 1인 청소년 웹개발 연습 홈페이지".normalize("NFKD");
@@ -24,7 +24,7 @@ function Title() {
     }
     const word_output = () => {
         const code = word[index].charCodeAt(0);
-        if(4352 <= code && code <= 4370) {
+        if (4352 <= code && code <= 4370) {
             return word.slice(0, index) + dict(word[index])
         }
         else {
@@ -50,10 +50,21 @@ function Title() {
     }, [index]);
 
     return (
-        <div className="Title">
-            <h1 className="MainTitle" draggable>문 인 우</h1>
-            <h5 className="SubTitle" draggable>{word_output()} </h5>
+        <div className="Home">
+            <div className="Title" draggable>
+                <h1 id="MainTitle">문 인 우</h1>
+                <h5 id="SubTitle">{word_output()}{'\u200b'}</h5>
+            </div>
+            <div className="Doc">
+                <div id="text">
+                    text display
+                </div>
+                <div id="block">
+                    block display
+                </div>
+            </div>
         </div>
+        
     )
 }
 

@@ -1,23 +1,21 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import './App.css';
-const Title = React.lazy( () => import('./Title'))
-const MenuBar = React.lazy( () => import("./MenuBar"))
+// const Home = React.lazy( () => import('./Home') );
+// const MenuBar = React.lazy( () => import("./MenuBar") );
+import Home from "./Home";
+import MenuBar from "./MenuBar";
 
 
 function App() {
     return (
         <div className="App">
-            <Suspense fallback={<p className="MenuBar">Loading...</p>}>
-                <MenuBar/>
-            </Suspense>
+            <MenuBar />
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={
                         <div className="Home">
-                            <Suspense fallback={<h1 className="Title">Loading...</h1>}>
-                                <Title/>
-                            </Suspense>
+                            <Home/>
                         </div>
                     } />
                     <Route path="/doc" element={
