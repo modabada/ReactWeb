@@ -23,7 +23,7 @@ function Section(prop: any) {
                 <div className="Btn" id="Home" draggable onClick={e => {
                     window.location.href="/";
                 }}>
-                    <img src={Home}/>
+                    <img src={Home} alt='HOME'/>
                 </div>);
         case 1:
             return(
