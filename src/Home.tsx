@@ -44,7 +44,7 @@ function Title() {
         return () => clearInterval(interv.current);
     }, []);
     useEffect(() => {
-        if (index > 38) {
+        if (index > word.length - 2) {
             clearInterval(interv.current);
         }
     }, [index]);
@@ -62,9 +62,14 @@ function Title() {
                 <div id="block">
                     block display
                 </div>
+                <div id="text">
+                    text display again
+                </div>
+            </div>
+            <div className="info">
+                <p>해당 페이지는 데스크탑 환경에 최적화되어있습니다</p>
             </div>
         </div>
-        
     )
 }
 

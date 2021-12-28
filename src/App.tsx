@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+// import React, { Suspense } from 'react';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import './App.css';
 // const Home = React.lazy( () => import('./Home') );
@@ -24,8 +24,6 @@ function App() {
 
                 </Routes>
             </BrowserRouter>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-            <h1>p</h1>
         </div>
     );
 }
