@@ -56,6 +56,8 @@ function Title() {
                 <h5 id="SubTitle">{word_output()}{'\u200b'}</h5>
             </div>
             <div className="Doc">
+                <h3>어서오세요!</h3> 
+
                 <div id="text">
                     text display
                 </div>

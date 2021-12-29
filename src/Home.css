@@ -24,7 +24,7 @@
     font-family: 'NanumGarMae';
 }
 
-#MainTitle {
+.Title > #MainTitle {
     margin-block: 0vh;
     top: 0%;
     animation: fadein 6s;
@@ -50,15 +50,15 @@
     margin-top: 0vh;
     margin-bottom: 0vh;
     padding: 3vh;
-    background-color: cyan;
 }
-#text {
+.Doc > h3 {
+    animation: fadein 12s;
+}
+.Doc > #text {
     background-color: red;
     padding: 3vh;
-    margin-bottom: 3vh;
 }
-#block {
-    margin-bottom: 3vh;
+.Doc > #block {
     padding: 3vh;
     background-color: green;
 }
