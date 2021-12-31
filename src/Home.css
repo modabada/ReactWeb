@@ -41,7 +41,7 @@
     }
 }
 
-#SubTitle {
+.Title > #SubTitle {
     margin-block: 0vh;
 }
 
@@ -50,9 +50,8 @@
     margin-top: 0vh;
     margin-bottom: 0vh;
     padding: 3vh;
-}
-.Doc > h3 {
-    animation: fadein 12s;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 .Doc > #text {
     background-color: red;
@@ -70,7 +69,7 @@
 .info > p {
     margin: 1vh;
     position: absolute;
-    right: 0vh;
-    bottom: 0vh;
+    right: 0;
+    bottom: 0;
     color: white;
 }

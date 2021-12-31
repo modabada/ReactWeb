@@ -67,9 +67,10 @@ function Title() {
                 <div id="text">
                     text display again
                 </div>
+                it is just text
             </div>
             <div className="info">
-                <p>해당 페이지는 데스크탑 환경에 최적화되어있습니다</p>
+                <p>이 웹사이트는 데스크탑 환경에 최적화되어있습니다</p>
             </div>
         </div>
     )
